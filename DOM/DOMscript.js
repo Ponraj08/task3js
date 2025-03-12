@@ -30,6 +30,8 @@ addtables.addEventListener("click", (e) => {
     status.textContent="status: submitted"
 
     
+    row=""
+    column=""
     
  
 })
