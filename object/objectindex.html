@@ -10,14 +10,23 @@
 
 <body>
 
+    <h1>updating existing values</h1>
     <input type="text" placeholder="enter name" name="Name" class="continer_input" id="inputName">
     <input type="text" placeholder="enter fathre name" name="FatherName" class="continer_input" id="inputFather">
     <input type="email" placeholder="enter email" name="Email" class="continer_input" id="inputMail">
-    <input type="text" name="opt" id="addingkey">
-    <input type="text" id="addingvalue">
+
+
+    <h1>adding new key and values</h1>
+    <input type="text" name="opt" id="addingkey" placeholder="enter new key">
+    <input type="text" id="addingvalue" placeholder="enter new value">
     <button id="submit_button" class="submit_button">submit</button>
 
-<p class="ans"> </p>
+
+    <h1>deleting</h1>
+    <input type="text" placeholder="enter key to delete" id="inputDelete">
+    <button id="delete_button">delete</button>
+
+<p id="ans"></p>
 
     <script src="objectscript.js"></script>
 </body>

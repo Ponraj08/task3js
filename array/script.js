@@ -58,6 +58,7 @@ console.log(dummydetails.reduce((total, values) => { return total + values }));
 console.log(...dummydetails, ...dummydetails1);
 console.log(dummydetails.slice(1, 4));
 
+
 //blocker
 console.log(dummydetails.sort());
 
