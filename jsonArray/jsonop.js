@@ -43,26 +43,36 @@ fetching().then((result) => {
 
       
       
-      const colm=document.createElement("tr")
+      // const colm=document.createElement("tr")
 
 
       
+      console.log(result)
+
+
+
 
       for(let i=0;i<result.length;i++){
+
+      
             
+           let x=Object.keys(result[i])
+
             
-            console.table(result[i])
-            
-            
-            x=Object.keys(result[i])
-            
-            
+           
+           
+           let y=Object.values(result[i])
+
+
             
             for (var j=0;j<x.length;j++){
                   
-                  key=x[j]
+                  let key=x[j]
+
                   
-                  value=result[i][key]
+                  let value=y[j]
+
+
                   
                   // console.log(key,value);
 
@@ -89,6 +99,19 @@ fetching().then((result) => {
             
       }
 
+          
+          // Group by Quantity
+          const fil= Map.groupBy(result, ({id})=>{
+            return id > 5 ? "yes" :"no";
+
+          })
+
+
+          for (let a of fil.get("yes")) {
+            console.log(a)
+          }
 
        ans.innerHTML = p
+
+
 })

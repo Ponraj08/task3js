@@ -6,7 +6,7 @@ addtables.addEventListener("click", (e) => {
     
     const row = document.getElementsByClassName("continer_input_row")[0].value
     const column = document.getElementsByClassName("continer_input_column")[0].value
-    const status=document.getElementsByClassName("status")[0].textContent
+    const status=document.getElementsByClassName("status")[0]
     
     console.log(row)
     console.log(column)
@@ -27,7 +27,7 @@ addtables.addEventListener("click", (e) => {
     }
 
 
-    status.textContent="status: submitted"
+    status.innerHTML="status: submitted"
 
     
     row=""

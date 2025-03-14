@@ -14,8 +14,8 @@ btn.addEventListener("click", () => {
    
    switch (num1, num2, opp) {
 
-      case "frontend":
-         ans.innerHTML = "answer = " + (Number(num1) + Number(num2)) + "html css js";
+      case "+":
+         ans.innerHTML = "answer = " + (Number(num1) + Number(num2));
          break;
 
       case "-":

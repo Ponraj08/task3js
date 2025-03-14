@@ -36,9 +36,9 @@ submitButton.addEventListener("click", () => {
   
   ans.innerHTML = p
   
-  if(firstName || inputFather || inputMail ===""){
+  if(firstName && inputFather && inputMail ===""){
     
-    alert("enter all fildes or it will clear others")
+    alert("enter all fildes or it will clear thatfield in list")
 
   }
   person1[Name] = firstName;

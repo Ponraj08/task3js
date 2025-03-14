@@ -24,16 +24,16 @@ addDetails.addEventListener("click", () => {
 
     table.append(colm)
 
-    console.log(details)
-    console.log(details.sort())
+    console.log("array-details-values : "+details)
+    console.log("array-details-sort : "+details.sort())
 
     let txt = ""
-    details.forEach(eachtest)
-    console.log(txt)
-    function eachtest(value, index, array) {
+    details.forEach((value) =>{
 
         return txt += value
-    }
+    })
+    console.log("array-details-in text para : "+txt)
+
 
     fstName.value = ""
     fatName.value = ""
@@ -52,14 +52,14 @@ function deleteDetails(event) {
 const dummydetails = [20, 10, 5, 30, 65]
 const dummydetails1 = [21, 10, 55, 30, 65]
 
-console.log(dummydetails.filter((values) => { return values > 30 }));
-console.log(dummydetails.map((values) => { return values * 2 }));
-console.log(dummydetails.reduce((total, values) => { return total + values }));
-console.log(...dummydetails, ...dummydetails1);
-console.log(dummydetails.slice(1, 4));
+console.log("array-dummydetails-filter : "+dummydetails.filter((values) => { return values > 30 }));
+console.log("array-dummydetails-map : "+dummydetails.map((values) => { return values * 2 }));
+console.log("array-dummydetails-reduse : "+dummydetails.reduce((total, values) => { return total + values }));
+
+console.log("array-dummydetails-filter : "+dummydetails.slice(1, 4));
 
 
 //blocker
-console.log(dummydetails.sort());
+console.log("array-dummydetails-sort : "+dummydetails.sort());
 
-console.log(dummydetails.splice(2, 0, " 45"));
+console.log("array-dummydetails-splice : "+dummydetails.splice(2, 0, " 45"));
