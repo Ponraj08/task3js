@@ -1,5 +1,4 @@
-
-input{
+input {
     display: block;
     margin: 20px;
     border: 1px solid black;
@@ -7,7 +6,7 @@ input{
     height: 50px;
 }
 
-button{
+button {
 
     background-color: rgb(50, 185, 68);
     padding: 10px;
@@ -16,4 +15,3 @@ button{
     margin: 20px;
 
 }
-

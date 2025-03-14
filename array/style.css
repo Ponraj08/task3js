@@ -1,5 +1,4 @@
-
-.continer_input{
+.continer_input {
     display: block;
     margin: 20px;
     border: 1px solid black;
@@ -7,26 +6,29 @@
     height: 50px;
 }
 
-table{
+table {
     margin: 20px;
     border-collapse: collapse;
     width: 70%;
-  
+
 }
-td, th {
+
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
-  }
+}
 
-.submit_button{
+.submit_button {
     background-color: rgb(78, 153, 78);
     padding: 20px;
     font-size: 26px;
     border-radius: 10px;
     margin: 20px;
 }
-button{
+
+button {
 
     background-color: rgb(224, 11, 11);
     padding: 10px;

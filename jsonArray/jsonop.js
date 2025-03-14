@@ -16,22 +16,25 @@ async function fetching() {
 fetching().then((result) => {
 
 
-      // console.log(result)
+      console.log(result)
 
 
       const ans = document.getElementById("ans")
-      const table=document.getElementById("table")
+      const table = document.getElementById("table")
 
 
 
       let p = ''
+
+
+      // first method
 
       // for (let i = 0; i < result.length; i++) {
 
 
       //       for (let key in result[i]) {
 
-                  
+
 
       //             p += `${key} : ${result[i][key]} <br />`
 
@@ -40,78 +43,49 @@ fetching().then((result) => {
 
       // }
 
-
-      
-      
-      // const colm=document.createElement("tr")
+      //second method
 
 
-      
-      console.log(result)
+      for (let i = 0; i < result.length; i++) {
 
 
 
-
-      for(let i=0;i<result.length;i++){
-
-      
-            
-           let x=Object.keys(result[i])
-
-            
-           
-           
-           let y=Object.values(result[i])
+            let x = Object.keys(result[i])
 
 
-            
-            for (var j=0;j<x.length;j++){
-                  
-                  let key=x[j]
-
-                  
-                  let value=y[j]
 
 
-                  
-                  // console.log(key,value);
+            let y = Object.values(result[i])
+
+
+
+            for (var j = 0; j < x.length; j++) {
+
+                  let key = x[j]
+
+
+                  let value = y[j]
+
 
                   p += `${key} : ${value} <br />`
 
-              }
+            }
 
-
-            // for(let j=0;j<result.length;j++){
-
-            //       console.log(j)
-
-            // }
-            
-            // console.log(Object.keys(result[i]))
-
-
-            // console.log(Object.values(result[i]))
-           
-
-            
-
-
-            
       }
 
-          
-          // Group by Quantity
-          const fil= Map.groupBy(result, ({id})=>{
-            return id > 5 ? "yes" :"no";
-
-          })
 
 
-          for (let a of fil.get("yes")) {
-            console.log(a)
-          }
+      const fil = Map.groupBy(result, ({ id }) => {
+            return id > 5 ? "yes" : "no";
 
-       ans.innerHTML = p
+      })
+
+
+      for (let a of fil.get("yes")) {
+            console.log("group by : " + a)
+      }
+
+      ans.innerHTML = p
 
 
 })
